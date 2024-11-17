@@ -17,7 +17,8 @@ Including another URLconf
 from UrbanDjango import *
 from django.contrib import admin
 from django.urls import path
-from task3.views import home, shop, basket
+from task4.views import home, shop, basket
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
