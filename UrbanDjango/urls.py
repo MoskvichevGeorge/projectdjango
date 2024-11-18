@@ -17,14 +17,14 @@ Including another URLconf
 from UrbanDjango import *
 from django.contrib import admin
 from django.urls import path
-from task4.views import home, shop, basket
+from task5.views import sign_up_by_django, sign_up_by_html
 
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
-    path('platform/', home),
-    path('platform/games/', shop),
-    path('platform/cart/', basket)
+    path('', sign_up_by_django, name='sign_up_by_django'),
+    path('django_sign_up/', sign_up_by_html, name='sign_up_by_html'),
 ]
+
+
 
 
